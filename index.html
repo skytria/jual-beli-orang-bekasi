@@ -1,29 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Neon</title>
+    <link rel="stylesheet" href="res/bootstrap@5.2.0.min.css">
+
+    <style>
+        /* ==== Background Animasi Neon ==== */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+            overflow: hidden;
+            background: linear-gradient(270deg, #0d0d0d, #1a0033, #000033, #001a33);
+            background-size: 800% 800%;
+            animation: bgAnimation 12s ease infinite;
+        }
+
+        @keyframes bgAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ==== Kartu Login ==== */
+        .login-card {
+            background-color: rgba(20, 20, 20, 0.9);
+            border: 2px solid #00ffcc;
+            border-radius: 12px;
+            padding: 2rem;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc66;
+            animation: glowPulse 2.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glowPulse {
+            0% { box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc66; }
+            100% { box-shadow: 0 0 25px #00ffee, 0 0 50px #00ffee88; }
+        }
+
+        .login-card h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #00ffcc;
+            text-shadow: 0 0 8px #00ffcc, 0 0 15px #00ffee;
+            margin-bottom: 1.5rem;
+        }
+
+        /* ==== Input & Label ==== */
+        .form-label {
+            font-size: 0.9rem;
+            color: #00ffee;
+            text-shadow: 0 0 5px #00ffee;
+        }
+
+        .form-control {
+            background-color: transparent;
+            border: 1px solid #00ffee;
+            color: #fff;
+            box-shadow: 0 0 5px #00ffee;
+        }
+
+        .form-control:focus {
+            background-color: transparent;
+            border-color: #00ffcc;
+            box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffee;
+        }
+
+        /* ==== Tombol Neon ==== */
+        .btn-neon {
+            background-color: transparent;
+            border: 1px solid #ff00cc;
+            color: #ff00cc;
+            font-weight: bold;
+            padding: 0.5rem 1.2rem;
+            width: 100%;
+            text-shadow: 0 0 5px #ff00cc;
+            box-shadow: 0 0 8px #ff00cc;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-neon:hover {
+            background-color: #ff00cc;
+            color: #000;
+            box-shadow: 0 0 15px #ff00cc, 0 0 30px #ff00cc;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="login-page">
-    <div class="nav">
-      
+    <div class="login-card">
+        <h1>Login</h1>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Masukan Nama</label>
+                <input type="text" class="form-control" placeholder="Nama Anda">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Masukan Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-neon">Login</button>
+        </form>
     </div>
-    <div class="penginputan">
-      <h1>Halaman Login</h1>
-      <label>Masukan nama</label>
-      <input class="masukan-nama"type = "text" placeholder="Masukan nama">
-      <label>Masukan nama</label>
-      <input class="masukan-password" type = "password" placeholder="Masukan password">
-      <button>Login</button>
-    </div>
-  </div>
-  
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
