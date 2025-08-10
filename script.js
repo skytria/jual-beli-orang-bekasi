@@ -1,10 +1,13 @@
+const inputNama = document.querySelector(".masukan-nama");
+const inputPassword = document.querySelector(".masukan-password");
+const tombolLogin = document.querySelector(".tombol-login")
 
-
-const inputnama = document.querySelector(".masukan-nama");
-
-inputnama.addEventListener("input",() => {
-  const nama = inputnama.value;
+tombolLogin.addEventListener("click",() => {
+  const nama = inputNama.value;
+  const password = inputPassword.value;
   console.log(nama);
+  console.log(password);
+  
   
 })
 
