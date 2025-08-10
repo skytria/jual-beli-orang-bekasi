@@ -1,3 +1,3 @@
 # jual-beli-orang-bekasi
 web jual beli
-link : http://akuaov.com.io/
+link : http://skytria.github.io/jual-beli-orang-bekasi/
