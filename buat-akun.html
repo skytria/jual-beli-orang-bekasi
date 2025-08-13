@@ -16,7 +16,7 @@
             <div class="container-fluid">
                 <img src="aelita.png" width="50" height="50">
                 <a class="navbar-brand opsi" href="#">Menu</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="png-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,9 +34,29 @@
                 </div>
             </div>
         </nav>
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+          <div class="card p-4 input" style="width: 400px;">
+            <h2 class="text-center mb-4 text-white">Daftar Sekarang</h2>
+            <form>
+              <div class="mb-3">
+                <label for="nama" class="form-label text-white">Daftarkan Nama</label>
+                <input type="text" class="form-control masukan-nama" id="nama" placeholder="Masukan Nama Akun Anda">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label text-white">Buat Password</label>
+                <input type="password" class="form-control masukan-password" id="password" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label text-white">Ulang Password</label>
+                <input type="password" class="form-control masukan-password" id="password" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-success tombol-login">Daftar</button>
+            </form>
+          </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="js/buat-akun.js"></script>
 </body>
 
 </html>

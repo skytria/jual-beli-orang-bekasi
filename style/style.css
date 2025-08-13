@@ -1,24 +1,244 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap');
+
+
 body {
-  font-family: Arial;
-  background-color: #0A0A0A;
-  
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #a8e6ff, #d0f2ff, #f0fcff);
+  color: #005f73; /* Warna teks utama biru tua */
 }
 
 .opsi {
-  font-weight:bold;
-  color:rgb(255,255,255);
+  font-weight: bold;
+  color: #ffffff; /* Putih untuk kontras */
+  font-family: 'Poppins', sans-serif;
 }
 
 .navigasi {
-  background-color:#2E2D2D;
+  background-color: #3a7bd5;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  background-color: #00d2ff;
+}
+
+/* Untuk judul khusus */
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  color: #ffeedd !important; /* Warna krem muda */
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px rgba(0, 91, 119, 0.5);
 }
 
 .input {
-  background-color:#414040;
+  background-color: #c9e9ff;
+  border: 1px solid #00b4db;
+  font-family: 'Poppins', sans-serif;
+  color: #006d77; /* Biru kehijauan */
 }
 
 .tombol-login {
-  width:100px;
-  height:50px;
-  margin-left: 250px;
+  width: 350px;
+  height: 50px;
+  margin-top: 10px;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: #e9f8ff; /* Biru sangat muda */
+  border: none;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
+
+
+
+.tombol-login:hover {
+  transform: translateY(-3p);
+  letter-spacing: 5px;
+  box-shadow: 0 5px 15px rgba(0, 180, 219, 0.4);
+  color: white;
+}
+
+.nav-link {
+  color: #e9f8ff; /* Biru sangat muda */
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.masukan-nama, .masukan-password {
+  background-color: #e0f7fa;
+  border: 1px solid #00b4db;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: #006d77;
+}
+
+/* Untuk elemen judul khusus */
+.judul-laut {
+  font-family: 'Pacifico', cursive;
+  color: #0077b6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.daftar {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #005f73; /* Biru tua */
+}
+
+.daftar a {
+  color: #0083b0; /* Biru medium */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.daftar a:hover {
+  color: #00b4db; /* Biru toska */
+  text-decoration: underline;
+}
+/* Fish decorations - Improved version */
+.fish {
+  position: fixed; /* Changed from absolute to fixed to prevent layout shifts */
+  color: rgba(0, 91, 119, 0.5); /* More visible color */
+  font-size: 1.5rem;
+  z-index: 0;
+  animation: swim 20s linear infinite;
+  pointer-events: none; /* Prevents interaction issues */
+}
+
+/* Adjust fish positions for better visibility */
+.fish:nth-child(1) {
+  top: 15%;
+  left: -50px;
+  font-size: 2rem;
+  animation-delay: 0s;
+  animation-duration: 25s;
+}
+
+.fish:nth-child(2) {
+  top: 70%;
+  left: -50px;
+  animation-delay: 5s;
+  animation-duration: 22s;
+}
+
+.fish:nth-child(3) {
+  top: 25%;
+  right: -50px;
+  animation-delay: 8s;
+  animation-duration: 28s;
+  transform: rotateY(180deg);
+}
+
+.fish:nth-child(4) {
+  bottom: 15%;
+  right: -50px;
+  animation-delay: 3s;
+  animation-duration: 24s;
+  transform: rotateY(180deg);
+}
+
+.fish:nth-child(5) {
+  top: 55%;
+  left: -50px;
+  font-size: 1.8rem;
+  animation-delay: 10s;
+  animation-duration: 20s;
+}
+
+/* Fish inside the login box - Improved */
+.card .fish {
+  font-size: 1.5rem;
+  opacity: 0.4;
+  animation: swimSmall 10s linear infinite;
+  color: rgba(0, 119, 182, 0.5);
+}
+
+.card .fish:nth-child(1) {
+  top: 20px;
+  left: 20px;
+}
+
+.card .fish:nth-child(2) {
+  bottom: 20px;
+  right: 20px;
+  animation-delay: 3s;
+}
+
+/* Improved animations */
+@keyframes swim {
+  0% {
+    transform: translateX(-100px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(calc(100vw + 50px)) rotateY(0deg);
+  }
+  51% {
+    transform: translateX(calc(100vw + 50px)) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(-100px) rotateY(180deg);
+  }
+}
+
+@keyframes swimSmall {
+  0% {
+    transform: translateX(-30px) rotateY(0deg) scaleX(1);
+  }
+  49% {
+    transform: translateX(calc(100% + 30px)) rotateY(0deg) scaleX(1);
+  }
+  50% {
+    transform: translateX(calc(100% + 30px)) rotateY(180deg) scaleX(-1);
+  }
+  99% {
+    transform: translateX(-30px) rotateY(180deg) scaleX(-1);
+  }
+  100% {
+    transform: translateX(-30px) rotateY(0deg) scaleX(1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fish {
+    font-size: 1.2rem;
+  }
+  
+  .fish:nth-child(1),
+  .fish:nth-child(3),
+  .fish:nth-child(4) {
+    font-size: 1.5rem;
+  }
+  
+  .card .fish {
+    font-size: 1rem;
+  }
+  
+  @keyframes swim {
+    0% {
+      transform: translateX(-50px) rotateY(0deg);
+    }
+    50% {
+      transform: translateX(calc(100vw + 30px)) rotateY(0deg);
+    }
+    51% {
+      transform: translateX(calc(100vw + 30px)) rotateY(180deg);
+    }
+    100% {
+      transform: translateX(-50px) rotateY(180deg);
+    }
+  }
+}
+

@@ -6,6 +6,4 @@ tombolLogin.addEventListener("click",(e) => {
   e.preventDefault();
   const nama = inputNama.value;
   const password = inputPassword.value;
-  console.log(nama);
-  console.log(password)
 })
