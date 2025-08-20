@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat datang di Jual Beli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="container navigation-top p-2">
+            <div class="row align-items-center">
+                <div class="col logo-start">
+                    <img class="logo" src="aov.png" alt="Warung Logo">
+                </div>
+                <div class="col text-center">
+                    <h1 class="site-title">Welcome</h1>
+                </div>
+                <div class="col text-end">
+                    <span class="menu-icon">🐟</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="nav-links">
+                            <a href="#" class="nav-link">Lobby</a>
+                            <a href="#" data-target="market" class="nav-link">Market</a>
+                            <a href="#" data-target="chat-seller" class="nav-link">Chat Seller</a>
+                            <a href="#" data-target="e-money" class="nav-link">E-Money</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="lobby-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Selamat Datang di <span>OceanMarket</span></h1>
+                    <p class="hero-subtitle">Temukan produk terbaik dengan nuansa laut yang menenangkan</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Cari produk...">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Kenapa Memilih OceanMarket?</h2>
+                <div class="row">
+                    <div class="col-md-4 feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Aman dan Terpercaya</h3>
+                        <p>Transaksi terlindungi dengan sistem keamanan terbaik</p>
+                    </div>
+                    <div class="col-md-4 feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3>Pengiriman Cepat</h3>
+                        <p>Seperti ombak yang bergerak cepat, pesanan Anda akan segera tiba</p>
+                    </div>
+                    <div class="col-md-4 feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Produk Berkualitas</h3>
+                        <p>Sejernih air laut, kualitas produk kami terjamin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Jelajahi Kategori</h2>
+                <div class="row">
+                    <div class="col-md-3 col-6 category-card">
+                        <div class="category-icon" style="background-color: #9ad3de;">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <p>Fashion</p>
+                    </div>
+                    <div class="col-md-3 col-6 category-card">
+                        <div class="category-icon" style="background-color: #89bdd3;">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <p>Elektronik</p>
+                    </div>
+                    <div class="col-md-3 col-6 category-card">
+                        <div class="category-icon" style="background-color: #c1e1ec;">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <p>Rumah Tangga</p>
+                    </div>
+                    <div class="col-md-3 col-6 category-card">
+                        <div class="category-icon" style="background-color: #a7d7e8;">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <p>Makanan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container py-4 d-none" id="market">
+        <h2 class="text-center mb-4" style="font-family: 'Montserrat', sans-serif;">Produk Yang Dijual</h2>
+        
+        <div class="product-grid">
+            <!-- Produk 1 -->
+            <div class="product-card card h-100 border-0 shadow-sm">
+                <div class="position-relative">
+                    <img src="aelita.png" class="card-img-top p-3" alt="Produk Aelita">
+                    <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1 m-2 small rounded">HOT</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Aelita Premium</h5>
+                    <p class="card-text text-muted small">Deskripsi produk singkat yang menarik perhatian pembeli.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price text-success">Rp250.000</span>
+                        <button class="btn btn-sm btn-primary">Keranjang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card card h-100 border-0 shadow-sm">
+                <div class="position-relative">
+                    <img src="aelita.png" class="card-img-top p-3" alt="Produk Aelita">
+                    <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1 m-2 small rounded">HOT</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Aelita Premium</h5>
+                    <p class="card-text text-muted small">Deskripsi produk singkat yang menarik perhatian pembeli.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price text-success">Rp250.000</span>
+                        <button class="btn btn-sm btn-primary">Keranjang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card card h-100 border-0 shadow-sm">
+                <div class="position-relative">
+                    <img src="aelita.png" class="card-img-top p-3" alt="Produk Aelita">
+                    <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1 m-2 small rounded">HOT</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Aelita Premium</h5>
+                    <p class="card-text text-muted small">Deskripsi produk singkat yang menarik perhatian pembeli.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price text-success">Rp250.000</span>
+                        <button class="btn btn-sm btn-primary">Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Perbaikan struktur HTML untuk chat-seller dan e-money -->
+    <div class="container py-4 d-none" id="chat-seller">
+        <h2 class="text-center mb-4" style="font-family: 'Montserrat', sans-serif;">Chat dengan Penjual</h2>
+        <div class="text-center">
+            <p>Fitur chat penjual akan segera hadir!</p>
+        </div>
+    </div>
+    
+    <div class="container py-4 d-none" id="e-money">
+        <h2 class="text-center mb-4" style="font-family: 'Montserrat', sans-serif;">E-Money</h2>
+        <div class="text-center">
+            <p>Fitur e-money akan segera hadir!</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
